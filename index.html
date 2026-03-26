@@ -206,6 +206,7 @@ footer {
     <select onchange="loadReport(this.value)">
         <option value="">-- Seçiniz --</option>
         <option value="2026">2026</option>
+        <option value="2025">2025</option>
     </select>
 </div>
 
@@ -231,9 +232,11 @@ function toggle(el) {
 
 function loadReport(year) {
     const reports = {
-        "2026": `<iframe src="https://www.canva.com/design/DAHEGfRitUo/fzmIWGxvQHqEgQmNbAyvrA/view?embed"></iframe>`
-    };
+        "2026": `<iframe src="https://www.canva.com/design/DAHEGfRitUo/fzmIWGxvQHqEgQmNbAyvrA/view?embed"></iframe>`,
 
+        "2025": `<iframe src="https://www.canva.com/design/DAHExZWG1go/BYrd2YAIQ7xBK-ev-G9Y2w/view?embed"></iframe>`
+    };
+  
     const area = document.getElementById("reportArea");
 
     if (reports[year]) {
